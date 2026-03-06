@@ -1,0 +1,3 @@
+[submodule "perf-hunter"]
+	path = perf-hunter
+	url = git@github.com:littletiny/perf-skill.git
