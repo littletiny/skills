@@ -6,36 +6,36 @@
 
 | 技能 | 名称 | 用途 | 触发关键词 |
 |------|------|------|-----------|
-| [ECTM](./ECTM/) | **ECTM** | 结构化调试方法论，证据链追踪与机制驱动的问题定位 | "调试"、"问题定位"、"根因分析"、反复失败 |
-| [CREW](./CREW/) | **CREW** | 协作式需求探索工作坊，将模糊想法转化为清晰需求 | "我有个想法"、"不确定怎么做"、"探索这个概念" |
-| [DDDW](./DDDW/) | **DDDW** | 文档驱动开发工作流，7步结构化开发流程 | "开始开发"、"规划功能"、"多 Agent 协作" |
-| [DMGR](./DMGR/) | **DMGR** | 文档维护与管理，重构后的文档结构维护 | 更新文档、创建新文档、迁移旧文档 |
-| [FIRE](./FIRE/) | **FIRE** | 多人协作 Git 提交规范 | 多人协作仓库、提交代码前 |
-| [METIS](./METIS/) | **METIS** | 方法论提取与可迁移洞察系统 | "又发生了"、"类似问题"、"从中学到什么" |
+| [ECTM](./evidence-chain-tracking/) | **ECTM** | 结构化调试方法论，证据链追踪与机制驱动的问题定位 | "调试"、"问题定位"、"根因分析"、反复失败 |
+| [CREW](./collaborative-requirements-exploration/) | **CREW** | 协作式需求探索工作坊，将模糊想法转化为清晰需求 | "我有个想法"、"不确定怎么做"、"探索这个概念" |
+| [DDDW](./document-driven-development/) | **DDDW** | 文档驱动开发工作流，7步结构化开发流程 | "开始开发"、"规划功能"、"多 Agent 协作" |
+| [DMGR](./documentation-manager/) | **DMGR** | 文档维护与管理，重构后的文档结构维护 | 更新文档、创建新文档、迁移旧文档 |
+| [FIRE](./fast-isolated-repository-execution/) | **FIRE** | 多人协作 Git 提交规范 | 多人协作仓库、提交代码前 |
+| [METIS](./methodology-extraction-transferable-insight/) | **METIS** | 方法论提取与可迁移洞察系统 | "又发生了"、"类似问题"、"从中学到什么" |
 | [systematic-hypothesis-evidence-controlled-reasoning](./systematic-hypothesis-evidence-controlled-reasoning/) | **SHECR** | 系统性性能诊断工具 | 性能问题、CPU 瓶颈、热点分析 |
 | [audit-markdown-syntax](./audit-markdown-syntax/) | **AMS** | Markdown 语法检查与修复 | 编辑 Markdown、提交前检查 |
 | [code-reader](./code-reader/) | **code-reader** | 代码逆向工程，从源码生成架构文档 | 阅读代码、理解项目、生成文档 |
-| [skills-nav](./skills-nav/) | **Skills-Nav** | Skills 导航器，帮助找到合适的 skill | "我该用哪个 skill"、"你有什么技能"、不确定用什么 |
+| [skills-navigator](./skills-navigator/) | **Skills-Nav** | Skills 导航器，帮助找到合适的 skill | "我该用哪个 skill"、"你有什么技能"、不确定用什么 |
 
 ## 技能分类
 
 ### 🐛 调试与诊断
-- **[ECTM](./ECTM/)** - 复杂问题调试，强调观察者检查与证据链追踪
+- **[ECTM](./evidence-chain-tracking/)** - 复杂问题调试，强调观察者检查与证据链追踪
 - **[systematic-hypothesis-evidence-controlled-reasoning](./systematic-hypothesis-evidence-controlled-reasoning/)** - 性能问题诊断，系统性假设验证方法论
 
 ### 📝 开发与协作
-- **[DDDW](./DDDW/)** - 文档驱动开发，7步从需求到代码
-- **[CREW](./CREW/)** - 需求探索工作坊，澄清模糊想法
-- **[FIRE](./FIRE/)** - Git 多人协作规范
+- **[DDDW](./document-driven-development/)** - 文档驱动开发，7步从需求到代码
+- **[CREW](./collaborative-requirements-exploration/)** - 需求探索工作坊，澄清模糊想法
+- **[FIRE](./fast-isolated-repository-execution/)** - Git 多人协作规范
 
 ### 📚 文档与知识
-- **[DMGR](./DMGR/)** - 文档结构维护指南
+- **[DMGR](./documentation-manager/)** - 文档结构维护指南
 - **[audit-markdown-syntax](./audit-markdown-syntax/)** - Markdown 语法检查
 - **[code-reader](./code-reader/)** - 代码阅读与架构文档生成
-- **[METIS](./METIS/)** - 经验萃取与方法论沉淀
+- **[METIS](./methodology-extraction-transferable-insight/)** - 经验萃取与方法论沉淀
 
 ### 🧭 导航与查询
-- **[skills-nav](./skills-nav/)** - Skills 导航器，智能推荐合适的 skill
+- **[skills-navigator](./skills-navigator/)** - Skills 导航器，智能推荐合适的 skill
 
 ## 使用方式
 
@@ -85,7 +85,7 @@ skills/
 ├── systematic-hypothesis-evidence-controlled-reasoning/  # SHECR 性能诊断
 │   ├── SKILL.md
 │   └── references/
-├── AMS/                      # AMS Markdown 检查
+├── audit-markdown-syntax/    # AMS Markdown 检查
 │   └── SKILL.md
 ├── code-reader/              # code-reader 代码阅读
 │   └── SKILL.md
