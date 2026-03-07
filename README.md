@@ -6,12 +6,12 @@
 
 | 技能 | 名称 | 用途 | 触发关键词 |
 |------|------|------|-----------|
-| [ECTM](./evidence-chain-tracking/) | **ECTM** | 结构化调试方法论，证据链追踪与机制驱动的问题定位 | "调试"、"问题定位"、"根因分析"、反复失败 |
-| [CREW](./collaborative-requirements-exploration/) | **CREW** | 协作式需求探索工作坊，将模糊想法转化为清晰需求 | "我有个想法"、"不确定怎么做"、"探索这个概念" |
-| [DDDW](./document-driven-development/) | **DDDW** | 文档驱动开发工作流，7步结构化开发流程 | "开始开发"、"规划功能"、"多 Agent 协作" |
-| [DMGR](./documentation-manager/) | **DMGR** | 文档维护与管理，重构后的文档结构维护 | 更新文档、创建新文档、迁移旧文档 |
-| [FIRE](./fast-isolated-repository-execution/) | **FIRE** | 多人协作 Git 提交规范 | 多人协作仓库、提交代码前 |
-| [METIS](./methodology-extraction-transferable-insight/) | **METIS** | 方法论提取与可迁移洞察系统 | "又发生了"、"类似问题"、"从中学到什么" |
+| [evidence-chain-tracking](./evidence-chain-tracking/) | **ECTM** | 结构化调试方法论，证据链追踪与机制驱动的问题定位 | "调试"、"问题定位"、"根因分析"、反复失败 |
+| [collaborative-requirements-exploration](./collaborative-requirements-exploration/) | **CREW** | 协作式需求探索工作坊，将模糊想法转化为清晰需求 | "我有个想法"、"不确定怎么做"、"探索这个概念" |
+| [document-driven-development](./document-driven-development/) | **DDDW** | 文档驱动开发工作流，7步结构化开发流程 | "开始开发"、"规划功能"、"多 Agent 协作" |
+| [documentation-manager](./documentation-manager/) | **DMGR** | 文档维护与管理，重构后的文档结构维护 | 更新文档、创建新文档、迁移旧文档 |
+| [fast-isolated-repository-execution](./fast-isolated-repository-execution/) | **FIRE** | 多人协作 Git 提交规范 | 多人协作仓库、提交代码前 |
+| [methodology-extraction-transferable-insight](./methodology-extraction-transferable-insight/) | **METIS** | 方法论提取与可迁移洞察系统 | "又发生了"、"类似问题"、"从中学到什么" |
 | [systematic-hypothesis-evidence-controlled-reasoning](./systematic-hypothesis-evidence-controlled-reasoning/) | **SHECR** | 系统性性能诊断工具 | 性能问题、CPU 瓶颈、热点分析 |
 | [audit-markdown-syntax](./audit-markdown-syntax/) | **AMS** | Markdown 语法检查与修复 | 编辑 Markdown、提交前检查 |
 | [code-reader](./code-reader/) | **code-reader** | 代码逆向工程，从源码生成架构文档 | 阅读代码、理解项目、生成文档 |
