@@ -65,21 +65,21 @@
 
 ```
 skills/
-├── ECTM/                     # ECTM 调试方法论
+├── evidence-chain-tracking/  # ECTM 调试方法论
 │   ├── SKILL.md
 │   └── references/
-├── CREW/                     # 需求探索工作坊
+├── collaborative-requirements-exploration/  # CREW 需求探索工作坊
 │   ├── SKILL.md
 │   └── references/
-├── DDDW/                     # DDDW 开发工作流
+├── document-driven-development/  # DDDW 开发工作流
 │   ├── SKILL.md
 │   └── references/
-├── DMGR/                     # 文档管理
+├── documentation-manager/    # DMGR 文档管理
 │   ├── SKILL.md
 │   └── references/
-├── FIRE/                     # Git 协作规范
+├── fast-isolated-repository-execution/  # FIRE Git 协作规范
 │   └── SKILL.md
-├── METIS/                    # 经验萃取
+├── methodology-extraction-transferable-insight/  # METIS 经验萃取
 │   ├── SKILL.md
 │   └── references/
 ├── systematic-hypothesis-evidence-controlled-reasoning/  # SHECR 性能诊断
@@ -89,7 +89,7 @@ skills/
 │   └── SKILL.md
 ├── code-reader/              # code-reader 代码阅读
 │   └── SKILL.md
-├── skills-nav/               # Skills 导航器
+├── skills-navigator/         # Skills 导航器
 │   └── SKILL.md
 ├── README.md                 # 本文件
 └── AGENTS.md                 # Agent 使用指南
