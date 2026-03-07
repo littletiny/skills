@@ -12,7 +12,7 @@
 | "性能问题..."、"CPU 高..."、"慢..." | [systematic-hypothesis-evidence-controlled-reasoning](./systematic-hypothesis-evidence-controlled-reasoning/SKILL.md) | 🔴 高 |
 | "整理文档..."、"重构文档..." | [DMGR](./DMGR/SKILL.md) | 🟡 中 |
 | "检查 Markdown..."、"格式问题..." | [audit-markdown-syntax](./audit-markdown-syntax/SKILL.md) | 🟡 中 |
-| "阅读代码..."、"理解项目..." | [Code-Reader](./Code-Reader/SKILL.md) | 🟡 中 |
+| "阅读代码..."、"理解项目..." | [code-reader](./code-reader/SKILL.md) | 🟡 中 |
 | "又发生了..."、"类似问题..."、"学到什么..." | [METIS](./METIS/SKILL.md) | 🟢 低(事后) |
 | "提交代码..."、多人协作仓库 | [FIRE](./FIRE/SKILL.md) | 🟡 中(行动前) |
 | "我该用哪个 skill"、"你有什么技能"、不确定 | [skills-nav](./skills-nav/SKILL.md) | 🟢 低(导航) |
@@ -160,7 +160,7 @@ docs/
 
 ---
 
-### 7. Code-Reader - 代码阅读
+### 7. code-reader - 代码阅读
 
 **定位**: 逆向工程专家，将源码抽象为架构文档
 
@@ -267,7 +267,7 @@ METIS - 萃取方法论供未来使用
 
 ### 模式 C: 接手新项目
 ```
-Code-Reader - 阅读代码生成架构文档
+code-reader - 阅读代码生成架构文档
     ↓
 METIS - 记录项目特定的认知模式
 ```
