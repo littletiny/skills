@@ -129,6 +129,29 @@ EOF
 
     chmod +x "$SHECR_GIT_DIR/hooks/post-checkout"
     
+    # post-commit hook for commits in submodule
+    cat > "$SHECR_GIT_DIR/hooks/post-commit" << EOF
+#!/bin/bash
+# post-commit hook in submodule: trigger parent repo update after commit
+
+echo ""
+echo "[Hook] SHECR committed, notifying parent repo..."
+
+cd "$ROOT_DIR" || exit 1
+
+NEW_COMMIT=\$(git -C SHECR rev-parse --short HEAD)
+
+echo "[Hook] New commit: \$NEW_COMMIT"
+echo "[Hook] Auto-staging SHECR in parent repo..."
+
+git add SHECR
+git commit -m "chore: auto-update SHECR to \$NEW_COMMIT" --no-verify 2>/dev/null || echo "[Hook] Nothing to commit or already staged"
+
+echo "[Hook] Parent repo updated."
+EOF
+
+    chmod +x "$SHECR_GIT_DIR/hooks/post-commit"
+    
     echo "✓ Installed hooks for SHECR submodule"
 fi
 

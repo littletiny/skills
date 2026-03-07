@@ -12,10 +12,15 @@
 
 安装后，当 **SHECR** submodule 有更新时，会自动提交到上层仓库：
 
-### 场景 1: 在 submodule 内更新
+### 场景 1: 在 submodule 内开发
 ```bash
 cd SHECR
-git pull origin master  # 自动触发上层 git add + commit
+# 开发...
+git add .
+git commit -m "feat: xxx"  # 自动触发上层 git add + commit
+
+# 或者拉取最新代码
+git pull origin master     # 也会自动触发上层提交
 ```
 
 ### 场景 2: 在上层更新 submodule
@@ -34,6 +39,7 @@ chore: auto-update SHECR to <short-commit-hash>
 - Hooks 是**本地配置**，不会随 `git clone` 自动安装
 - 团队成员需要各自运行 `./hooks/install-hooks.sh`
 - 在 rebase/merge 冲突时会跳过自动提交，避免干扰
+- **循环提交保护**: 上层自动提交不会触发新的 hook（使用 `--no-verify`）
 
 ## 卸载
 
