@@ -274,7 +274,7 @@ METIS - 记录项目特定的认知模式
 
 ### 模式 D: 性能优化
 ```
-SHECR - 诊断瓶颈
+systematic-hypothesis-evidence-controlled-reasoning - 诊断瓶颈
     ↓
 DDDW - 规划优化方案
     ↓
@@ -287,7 +287,7 @@ FIRE - 提交优化代码
 |------|------|
 | 需求模糊 | 使用 CREW，不要直接进 DDDW |
 | 调试 >3 次失败 | 激活 ECTM |
-| 性能问题 | 直接使用 SHECR |
+| 性能问题 | 直接使用 systematic-hypothesis-evidence-controlled-reasoning |
 | 多人协作 | 代码行动前检查 FIRE |
 | 文档整理 | DMGR + AMS 组合 |
 | 编辑 Markdown | 完成后用 AMS 检查 |

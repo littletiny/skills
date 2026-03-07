@@ -1,4 +1,4 @@
-[submodule "SHECR"]
-	path = SHECR
+[submodule "systematic-hypothesis-evidence-controlled-reasoning"]
+	path = systematic-hypothesis-evidence-controlled-reasoning
 	url = git@github.com:littletiny/perf-skill.git
 	branch = master
