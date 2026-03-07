@@ -9,7 +9,7 @@
 | "帮我调试..."、"为什么报错..."、反复失败 | [ECTM](./ECTM/SKILL.md) | 🔴 高 |
 | "我有个想法..."、"不确定怎么做..." | [CREW](./CREW/SKILL.md) | 🔴 高 |
 | "开始开发..."、"规划功能..."、"多 Agent..." | [DDDW](./DDDW/SKILL.md) | 🔴 高 |
-| "性能问题..."、"CPU 高..."、"慢..." | [SHECR-perf-hunter](./SHECR-perf-hunter/SKILL.md) | 🔴 高 |
+| "性能问题..."、"CPU 高..."、"慢..." | [systematic-hypothesis-evidence-controlled-reasoning](./systematic-hypothesis-evidence-controlled-reasoning/SKILL.md) | 🔴 高 |
 | "整理文档..."、"重构文档..." | [DMGR](./DMGR/SKILL.md) | 🟡 中 |
 | "检查 Markdown..."、"格式问题..." | [audit-markdown-syntax](./audit-markdown-syntax/SKILL.md) | 🟡 中 |
 | "阅读代码..."、"理解项目..." | [Code-Reader](./Code-Reader/SKILL.md) | 🟡 中 |
