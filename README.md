@@ -12,8 +12,8 @@
 | [DMGR](./DMGR/) | **DMGR** | 文档维护与管理，重构后的文档结构维护 | 更新文档、创建新文档、迁移旧文档 |
 | [FIRE](./FIRE/) | **FIRE** | 多人协作 Git 提交规范 | 多人协作仓库、提交代码前 |
 | [METIS](./METIS/) | **METIS** | 方法论提取与可迁移洞察系统 | "又发生了"、"类似问题"、"从中学到什么" |
-| [SHECR](./SHECR/) | **SHECR** | 系统性性能诊断工具 | 性能问题、CPU 瓶颈、热点分析 |
-| [AMS](./AMS/) | **AMS** | Markdown 语法检查与修复 | 编辑 Markdown、提交前检查 |
+| [SHECR-perf-hunter](./SHECR-perf-hunter/) | **SHECR** | 系统性性能诊断工具 | 性能问题、CPU 瓶颈、热点分析 |
+| [audit-markdown-syntax](./audit-markdown-syntax/) | **AMS** | Markdown 语法检查与修复 | 编辑 Markdown、提交前检查 |
 | [Code-Reader](./Code-Reader/) | **Code-Reader** | 代码逆向工程，从源码生成架构文档 | 阅读代码、理解项目、生成文档 |
 | [skills-nav](./skills-nav/) | **Skills-Nav** | Skills 导航器，帮助找到合适的 skill | "我该用哪个 skill"、"你有什么技能"、不确定用什么 |
 
@@ -21,7 +21,7 @@
 
 ### 🐛 调试与诊断
 - **[ECTM](./ECTM/)** - 复杂问题调试，强调观察者检查与证据链追踪
-- **[SHECR](./SHECR/)** - 性能问题诊断，系统性假设验证方法论
+- **[SHECR-perf-hunter](./SHECR-perf-hunter/)** - 性能问题诊断，系统性假设验证方法论
 
 ### 📝 开发与协作
 - **[DDDW](./DDDW/)** - 文档驱动开发，7步从需求到代码
@@ -30,7 +30,7 @@
 
 ### 📚 文档与知识
 - **[DMGR](./DMGR/)** - 文档结构维护指南
-- **[AMS](./AMS/)** - Markdown 语法检查
+- **[audit-markdown-syntax](./audit-markdown-syntax/)** - Markdown 语法检查
 - **[Code-Reader](./Code-Reader/)** - 代码阅读与架构文档生成
 - **[METIS](./METIS/)** - 经验萃取与方法论沉淀
 

@@ -1,6 +1,6 @@
 ---
-name: DMGR
-description: Maintain and update project documentation structure after major refactoring. Use when updating existing docs, creating new docs, or migrating legacy docs to follow the new module-based directory structure.
+name: documentation-manager
+description: DMGR - Documentation Manager. Maintain and update project documentation structure after major refactoring. Use when updating existing docs, creating new docs, or migrating legacy docs to follow the new module-based directory structure.
 ---
 
 # Docs Maintainer

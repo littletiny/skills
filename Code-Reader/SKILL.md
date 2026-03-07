@@ -1,4 +1,6 @@
-
+---
+name: code-reader
+description: CR - Code-Reader. Code reverse engineering expert responsible for abstracting low-level source code into high-level architecture documents. Use when reading new project code, generating architecture documentation, or understanding system core design.
 ---
 
 # Code-Reader

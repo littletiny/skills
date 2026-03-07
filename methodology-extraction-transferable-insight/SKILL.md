@@ -1,6 +1,6 @@
 ---
-name: METIS
-description: Methodology Extraction & Transferable Insight System. Use when debugging fails, tests keep breaking, or recurring issues appear. Triggers on phrases like "happened again", "similar issue", "why did this fail", "learn from this", or when needing to extract general principles from specific debugging experiences.
+name: methodology-extraction-transferable-insight
+description: METIS - Methodology Extraction & Transferable Insight System. Use when debugging fails, tests keep breaking, or recurring issues appear. Triggers on phrases like "happened again", "similar issue", "why did this fail", "learn from this", or when needing to extract general principles from specific debugging experiences.
 ---
 
 # METIS - Methodology Extraction & Transferable Insight System
@@ -295,4 +295,4 @@ Single case → methodology → Overfitting
 
 - **DDDW**: Development workflow where METIS learns from
 - **CREW**: Requirements exploration where METIS principles inform trade-offs
-- **AMS**: Check METIS documentation formatting
+- **audit-markdown-syntax**: Check METIS documentation formatting

@@ -10,11 +10,11 @@
 
 ## 效果
 
-安装后，当 **SHECR** submodule 有更新时，会自动提交到上层仓库：
+安装后，当 **SHECR-perf-hunter** submodule 有更新时，会自动提交到上层仓库：
 
 ### 场景 1: 在 submodule 内开发
 ```bash
-cd SHECR
+cd SHECR-perf-hunter
 # 开发...
 git add .
 git commit -m "feat: xxx"  # 自动触发上层 git add + commit
@@ -25,13 +25,13 @@ git pull origin master     # 也会自动触发上层提交
 
 ### 场景 2: 在上层更新 submodule
 ```bash
-git submodule update --remote SHECR  # 自动触发 git commit
+git submodule update --remote SHECR-perf-hunter  # 自动触发 git commit
 ```
 
 ## 自动提交信息格式
 
 ```
-chore: auto-update SHECR to <short-commit-hash>
+chore: auto-update SHECR-perf-hunter to <short-commit-hash>
 ```
 
 ## 注意事项
@@ -49,6 +49,6 @@ chore: auto-update SHECR to <short-commit-hash>
 rm .git/hooks/post-checkout
 rm .git/hooks/post-merge
 rm .git/hooks/post-rewrite
-rm SHECR/.git/hooks/post-merge
-rm SHECR/.git/hooks/post-checkout
+rm SHECR-perf-hunter/.git/hooks/post-merge
+rm SHECR-perf-hunter/.git/hooks/post-checkout
 ```

@@ -1,6 +1,6 @@
 ---
 name: audit-markdown-syntax
-description: Check and fix Markdown syntax errors, especially code block nesting issues, broken links, and formatting problems. Use when editing Markdown files to validate syntax correctness before committing.
+description: AMS - Audit Markdown Syntax. Check and fix Markdown syntax errors, especially code block nesting issues, broken links, and formatting problems. Use when editing Markdown files to validate syntax correctness before committing.
 ---
 
 # Audit Markdown Syntax (AMS)

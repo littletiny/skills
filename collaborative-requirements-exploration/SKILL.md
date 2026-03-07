@@ -1,6 +1,6 @@
 ---
-name: CREW
-description: Collaborative Requirements Exploration Workshop. Use when user has fuzzy ideas and needs structured discussion to clarify requirements. Triggers on phrases like "I have an idea", "not sure how to", "explore this concept", "help me think through", or when requirements are vague and need discovery before development.
+name: collaborative-requirements-exploration
+description: CREW - Collaborative Requirements Exploration Workshop. Use when user has fuzzy ideas and needs structured discussion to clarify requirements. Triggers on phrases like "I have an idea", "not sure how to", "explore this concept", "help me think through", or when requirements are vague and need discovery before development.
 ---
 
 # CREW - Collaborative Requirements Exploration Workshop
@@ -229,4 +229,4 @@ Exploration is successful when:
 ## Related Skills
 
 - **DDDW**: Use after CREW completes for implementation
-- **AMS**: Use to check exploration.md formatting
+- **audit-markdown-syntax**: Use to check exploration.md formatting

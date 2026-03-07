@@ -1,6 +1,6 @@
 ---
-name: skills-nav
-description: Query and navigate available skills in this project. Use when user needs help finding the right skill for their task, unsure which skill to use, or wants to explore available capabilities. Reads AGENTS.md to get up-to-date skill information.
+name: skills-navigator
+description: SN - Skills Navigator. Query and navigate available skills in this project. Use when user needs help finding the right skill for their task, unsure which skill to use, or wants to explore available capabilities. Reads AGENTS.md to get up-to-date skill information.
 ---
 
 # Skills Navigator
@@ -52,11 +52,11 @@ description: Query and navigate available skills in this project. Use when user 
 | 用户输入包含... | 推荐 Skill | 理由 |
 |----------------|-----------|------|
 | 调试、bug、报错、失败 | ECTM | AGENTS.md: "用户说...'帮我调试...' → ECTM" |
-| 性能、cpu、慢、瓶颈 | SHECR | AGENTS.md: "性能问题... → SHECR" |
+| 性能、cpu、慢、瓶颈 | SHECR-perf-hunter | AGENTS.md: "性能问题... → SHECR" |
 | 想法、需求、不确定 | CREW | AGENTS.md: "'我有个想法...' → CREW" |
 | 开发、功能、实现 | DDDW | AGENTS.md: "'开始开发...' → DDDW" |
 | 文档、整理、重构 | DMGR | AGENTS.md: "整理文档... → DMGR" |
-| markdown、格式、检查 | AMS | AGENTS.md: "检查 Markdown... → AMS" |
+| markdown、格式、检查 | audit-markdown-syntax | AGENTS.md: "检查 Markdown... → AMS" |
 | 读代码、理解项目 | Code-Reader | AGENTS.md: "阅读代码... → Code-Reader" |
 | 提交、git、协作 | FIRE | AGENTS.md: "提交代码... → FIRE" |
 | 总结、学到、类似问题 | METIS | AGENTS.md: "'又发生了...' → METIS" |

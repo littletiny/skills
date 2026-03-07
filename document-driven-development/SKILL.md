@@ -1,6 +1,6 @@
 ---
-name: DDDW
-description: Document-Driven Development (DDD) workflow for multi-agent collaborative development. Use when starting a new feature, planning multi-person development, or following a structured 7-step process from requirements to code. Triggers on phrases like "start development", "plan feature", "document-driven", or "multi-agent development".
+name: document-driven-development
+description: DDDW - Document-Driven Development workflow for multi-agent collaborative development. Use when starting a new feature, planning multi-person development, or following a structured 7-step process from requirements to code. Triggers on phrases like "start development", "plan feature", "document-driven", or "multi-agent development".
 ---
 
 # Document-Driven Development Workflow (4D-Workflow)

@@ -1,6 +1,6 @@
 ---
-name: ECTM
-description: Evidence-Chain Tracking & Mechanism-Driven Debugging for systematic root cause analysis. Use when debugging complex issues, investigating anomalies that seem "obvious" but resist fixing, or when you suspect the problem might be in how you're looking rather than what you're looking at. Triggers on repeated failures, post-mortems, or any situation requiring structured evidence tracking and mechanism validation. Emphasizes observer-check and ignoring the "obvious" to find hidden causal chains.
+name: evidence-chain-tracking
+description: ECTM - Evidence-Chain Tracking & Mechanism-Driven Debugging for systematic root cause analysis. Use when debugging complex issues, investigating anomalies that seem "obvious" but resist fixing, or when you suspect the problem might be in how you're looking rather than what you're looking at. Triggers on repeated failures, post-mortems, or any situation requiring structured evidence tracking and mechanism validation. Emphasizes observer-check and ignoring the "obvious" to find hidden causal chains.
 ---
 
 # ECTM (Evidence-Chain Tracking & Mechanism-Driven Debugging)
