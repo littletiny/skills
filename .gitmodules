@@ -1,3 +1,4 @@
 [submodule "SHECR"]
 	path = SHECR
 	url = git@github.com:littletiny/perf-skill.git
+	branch = master
