@@ -46,8 +46,10 @@ description: ECTM - Evidence-Chain Tracking & Mechanism-Driven Debugging for sys
 1. **解析输入**：识别已提供的 SAOIR 维度
 2. **列出缺口**：明确指出缺失的关键信息（使用表格呈现）
 3. **生成问题**：一次性提出 3-5 个具体问题引导补全（避免多轮追问）
-4. **结构化确认**：用户补全后，整理成 V1 表格双方对齐
+4. **结构化确认**：用户补全后，将各维度融合成一句清晰的 V1 描述，双方对齐
 5. **再进入** Step 0
+
+**注意**：SAOIR 是检查工具，不是文档格式。V1 应是一段清晰的问题描述，而非表格拆解。
 
 #### 引导补全示例
 
@@ -77,16 +79,13 @@ description: ECTM - Evidence-Chain Tracking & Mechanism-Driven Debugging for sys
 >
 > **4. 恢复确定性**：重启 gateway 是每次都恢复，还是偶尔恢复？
 
-**用户补全后，结构化确认 V1**：
-```markdown
-| 维度 | 内容 |
-| :--- | :--- |
-| Scope | 分析 feishu channel session 级消息阻塞的可能场景 |
-| Anomaly | 单个 session 消息停止下发，但表情回复可见 |
-| Observation | 表情回复正常 → 推断消息已处理但下发受阻 |
-| Isolation | ✅ 其他 session 正常（session 级问题）<br>✅ 该 session 其他功能正常（消息下发专属） |
-| Recovery | 重启 gateway 必定恢复（gateway 状态累积问题） |
+**用户补全后，融合为清晰 V1**：
 ```
+V1: feishu channel 出现 session 级消息阻塞——单个 session 消息停止下发，
+但表情回复可见（说明消息已处理），其他 session 正常；重启 gateway 恢复。
+```
+
+**融合原则**：保留关键因果锚点（表情可见→处理完但下发受阻），用简洁语言串联所有维度，避免过度结构化。
 
 ---
 
