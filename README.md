@@ -90,9 +90,9 @@ skills/
 │   └── references/
 ├── audit-markdown-syntax/    # AMS Markdown 检查
 │   └── SKILL.md
-├── code-reader/              # code-reader 代码阅读
+├── code-reader/              # CR 整体阅读
 │   └── SKILL.md
-├── code-mechanism-reader/    # CMR 机制逆向分析
+├── code-mechanism-reader/    # CMR 细节精读
 │   └── SKILL.md
 ├── skills-navigator/         # Skills 导航器
 │   └── SKILL.md
