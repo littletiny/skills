@@ -15,6 +15,7 @@
 | [systematic-hypothesis-evidence-controlled-reasoning](./systematic-hypothesis-evidence-controlled-reasoning/) | **SHECR** | 系统性性能诊断工具 | 性能问题、CPU 瓶颈、热点分析 |
 | [audit-markdown-syntax](./audit-markdown-syntax/) | **AMS** | Markdown 语法检查与修复 | 编辑 Markdown、提交前检查 |
 | [code-reader](./code-reader/) | **code-reader** | 代码逆向工程，从源码生成架构文档 | 阅读代码、理解项目、生成文档 |
+| [code-mechanism-reader](./code-mechanism-reader/) | **CMR** | 机制逆向分析，深度剖析特定功能模块 | "分析xx机制"、"理解连接池"、状态机、数据流 |
 | [skills-navigator](./skills-navigator/) | **Skills-Nav** | Skills 导航器，帮助找到合适的 skill | "我该用哪个 skill"、"你有什么技能"、不确定用什么 |
 
 ## 技能分类
@@ -31,7 +32,8 @@
 ### 📚 文档与知识
 - **[DMGR](./documentation-manager/)** - 文档结构维护指南
 - **[audit-markdown-syntax](./audit-markdown-syntax/)** - Markdown 语法检查
-- **[code-reader](./code-reader/)** - 代码阅读与架构文档生成
+- **[code-reader](./code-reader/)** - 代码阅读与架构文档生成（全景视角）
+- **[CMR](./code-mechanism-reader/)** - 机制逆向分析（深度视角）
 - **[METIS](./methodology-extraction-transferable-insight/)** - 经验萃取与方法论沉淀
 
 ### 🧭 导航与查询
@@ -57,7 +59,8 @@
 |------|-------------|
 | 从零开发新功能 | CREW → DDDW → FIRE |
 | 排查复杂 Bug | ECTM → METIS(事后总结) |
-| 接手新项目 | code-reader → METIS |
+| 接手新项目 | code-reader → CMR → METIS |
+| 深入理解核心机制 | CMR（分析状态机/数据流/组件交互） |
 | 性能优化 | systematic-hypothesis-evidence-controlled-reasoning → DDDW → FIRE |
 | 文档整理 | DMGR → AMS |
 
@@ -88,6 +91,8 @@ skills/
 ├── audit-markdown-syntax/    # AMS Markdown 检查
 │   └── SKILL.md
 ├── code-reader/              # code-reader 代码阅读
+│   └── SKILL.md
+├── code-mechanism-reader/    # CMR 机制逆向分析
 │   └── SKILL.md
 ├── skills-navigator/         # Skills 导航器
 │   └── SKILL.md

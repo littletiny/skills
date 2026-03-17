@@ -13,6 +13,7 @@
 | "整理文档..."、"重构文档..." | [DMGR](./documentation-manager/SKILL.md) | 🟡 中 |
 | "检查 Markdown..."、"格式问题..." | [audit-markdown-syntax](./audit-markdown-syntax/SKILL.md) | 🟡 中 |
 | "阅读代码..."、"理解项目..." | [code-reader](./code-reader/SKILL.md) | 🟡 中 |
+| "分析xx机制..."、"理解状态机..."、"消息发送流程..." | [CMR](./code-mechanism-reader/SKILL.md) | 🟡 中 |
 | "又发生了..."、"类似问题..."、"学到什么..." | [METIS](./methodology-extraction-transferable-insight/SKILL.md) | 🟢 低(事后) |
 | "提交代码..."、多人协作仓库 | [FIRE](./fast-isolated-repository-execution/SKILL.md) | 🟡 中(行动前) |
 | "我该用哪个 skill"、"你有什么技能"、不确定 | [skills-navigator](./skills-navigator/SKILL.md) | 🟢 低(导航) |
@@ -187,7 +188,44 @@ docs/
 
 ---
 
-### 8. METIS - 经验萃取
+### 8. CMR - 机制逆向分析
+
+**全称**: Code Mechanism Reader
+
+**定位**: 代码机制逆向分析专家，将特定功能模块的底层实现抽象为机制分析文档
+
+**何时使用**:
+- 深入理解某个核心机制（如消息发送、连接池、断路器）
+- 排查状态流转异常、异步时序问题
+- 需要向他人解释某机制的工作原理
+- 遗留系统关键模块缺乏文档
+
+**与 code-reader 的区别**:
+| | code-reader | CMR |
+|---|---|---|
+| **视角** | 全景 - 整个系统 | 深度 - 单个机制 |
+| **粒度** | 架构级 | 实现级 |
+| **输出** | 6份架构文档 | 1份机制文档 |
+| **场景** | 接手新项目 | 深入理解特定功能 |
+
+**核心分析维度 (5W1H)**:
+- **What** - 概念抽象、术语定义
+- **Where** - 入口定位（API、回调、事件）
+- **How** - 流程拆解（同步/异步路径）
+- **State** - 状态机（状态定义、转换规则）
+- **Who** - 组件交互（职责、协作协议）
+- **Why** - 设计权衡（决策原因、性能考量）
+
+**输出**: `doc/mechanism-{mechanism-name}.md`
+
+**按需分析原则**:
+- 简单机制：概述 + 概念模型 + 实现精要
+- 流程型机制：概述 + 入口 + 数据流 + 实现精要
+- 状态型机制：概述 + 概念模型 + 状态机 + 组件架构
+
+---
+
+### 9. METIS - 经验萃取
 
 **全称**: Methodology Extraction & Transferable Insight System
 
@@ -218,7 +256,7 @@ METIS/
 
 ---
 
-### 9. FIRE - Git 协作规范
+### 10. FIRE - Git 协作规范
 
 **何时使用**:
 - 多人协作的 Git 仓库
@@ -231,7 +269,7 @@ METIS/
 
 ---
 
-### 10. skills-nav - Skills 导航器
+### 11. skills-nav - Skills 导航器
 
 **何时使用**:
 - 用户不确定该用哪个 skill
@@ -267,9 +305,20 @@ METIS - 萃取方法论供未来使用
 
 ### 模式 C: 接手新项目
 ```
-code-reader - 阅读代码生成架构文档
+code-reader - 阅读代码生成架构文档（全景）
+    ↓
+CMR - 深入分析核心机制（深度）
     ↓
 METIS - 记录项目特定的认知模式
+```
+
+### 模式 E: 深入分析核心机制
+```
+CMR - 分析状态机、数据流、组件交互
+    ↓
+ECTM（如有 Bug）- 问题定位
+    ↓
+METIS - 萃取机制理解方法论
 ```
 
 ### 模式 D: 性能优化
@@ -292,6 +341,26 @@ FIRE - 提交优化代码
 | 文档整理 | DMGR + AMS 组合 |
 | 编辑 Markdown | 完成后用 AMS 检查 |
 | 调试成功但有收获 | 用 METIS 记录案例 |
+| 需要深入理解某机制 | 使用 CMR（而非 code-reader） |
+
+---
+
+---
+
+## 关于版本管理
+
+**所有技能文档不显式标注版本号**（如 v1.0, v2.0）。
+
+原因：
+- Git 已经记录了完整的历史变更
+- 文件内标注版本会导致冗余和混乱
+- 查看历史：`git log --oneline <file>`
+- 查看差异：`git diff <commit> <file>`
+
+**修改原则**：
+- 直接修改现有文档，保留核心结构
+- 重大变更在 Git commit message 中说明
+- 删除废弃内容而非标记为 deprecated
 
 ---
 
