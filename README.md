@@ -16,6 +16,7 @@
 | [audit-markdown-syntax](./audit-markdown-syntax/) | **AMS** | Markdown 语法检查与修复 | 编辑 Markdown、提交前检查 |
 | [code-reader](./code-reader/) | **code-reader** | 代码逆向工程，从源码生成架构文档 | 阅读代码、理解项目、生成文档 |
 | [code-mechanism-reader](./code-mechanism-reader/) | **CMR** | 机制逆向分析，深度剖析特定功能模块 | "分析xx机制"、"理解连接池"、状态机、数据流 |
+| [context-bridge](./context-bridge/) | **COBRA** | 跨会话知识桥接，保存调试上下文 | "保存调试上下文"、"跨 Session 知识"、"保留上下文" |
 | [skills-navigator](./skills-navigator/) | **Skills-Nav** | Skills 导航器，帮助找到合适的 skill | "我该用哪个 skill"、"你有什么技能"、不确定用什么 |
 
 ## 技能分类
@@ -35,6 +36,7 @@
 - **[code-reader](./code-reader/)** - 代码阅读与架构文档生成（全景视角）
 - **[CMR](./code-mechanism-reader/)** - 机制逆向分析（深度视角）
 - **[METIS](./methodology-extraction-transferable-insight/)** - 经验萃取与方法论沉淀
+- **[COBRA](./context-bridge/)** - 跨会话知识桥接，保存调试上下文
 
 ### 🧭 导航与查询
 - **[skills-navigator](./skills-navigator/)** - Skills 导航器，智能推荐合适的 skill
@@ -63,6 +65,7 @@
 | 深入理解核心机制 | CMR（分析状态机/数据流/组件交互） |
 | 性能优化 | systematic-hypothesis-evidence-controlled-reasoning → DDDW → FIRE |
 | 文档整理 | DMGR → AMS |
+| 跨 Session 保留调试上下文 | COBRA |
 
 ## 目录结构
 
@@ -93,6 +96,8 @@ skills/
 ├── code-reader/              # CR 整体阅读
 │   └── SKILL.md
 ├── code-mechanism-reader/    # CMR 细节精读
+│   └── SKILL.md
+├── context-bridge/           # COBRA 跨会话知识桥接
 │   └── SKILL.md
 ├── skills-navigator/         # Skills 导航器
 │   └── SKILL.md

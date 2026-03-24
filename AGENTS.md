@@ -16,6 +16,7 @@
 | "分析xx机制..."、"理解状态机..."、"消息发送流程..." | [CMR](./code-mechanism-reader/SKILL.md) | 🟡 中 |
 | "又发生了..."、"类似问题..."、"学到什么..." | [METIS](./methodology-extraction-transferable-insight/SKILL.md) | 🟢 低(事后) |
 | "提交代码..."、多人协作仓库 | [FIRE](./fast-isolated-repository-execution/SKILL.md) | 🟡 中(行动前) |
+| "保存调试上下文..."、"跨 Session 知识..." | [COBRA](./context-bridge/SKILL.md) | 🟡 中 |
 | "我该用哪个 skill"、"你有什么技能"、不确定 | [skills-navigator](./skills-navigator/SKILL.md) | 🟢 低(导航) |
 
 ## 技能详情
@@ -256,7 +257,35 @@ METIS/
 
 ---
 
-### 10. FIRE - Git 协作规范
+### 10. COBRA - 跨会话知识桥接
+
+**全称**: **CO**ntext **O**rchestrated **B**ridge **R**esource **A**rchive
+
+**何时使用**:
+- 调试复杂系统多次，需要保存上下文
+- 系统有非显而易见的机制
+- 上下文重建成本高
+- 需要引导新 Session
+
+**核心概念**:
+- **C**ontext — 保存调试上下文，非系统化文档
+- **O**rchestrated — 经过提炼、有组织的知识（非原始笔记）
+- **B**ridge — 桥接不同 Session 的连续性
+- **R**esource — 可复用的知识资源
+- **A**rchive — 持久化存档，随时间累积
+
+**文档类型**:
+| 类型 | 场景 | 输出位置 |
+|------|------|----------|
+| Type A | 长期系统知识 | `docs/system-log/<system>.md` |
+| Type B | Session 转移 | `memory/debug-context-<issue>.md` |
+| Type C | 故障排查条目 | `<module>/troubleshooting/<symptom>.md` |
+
+**核心原则**: 保存事实（带锚点），而非调试过程的叙事。
+
+---
+
+### 11. FIRE - Git 协作规范
 
 **何时使用**:
 - 多人协作的 Git 仓库
@@ -269,7 +298,7 @@ METIS/
 
 ---
 
-### 11. skills-nav - Skills 导航器
+### 12. skills-nav - Skills 导航器
 
 **何时使用**:
 - 用户不确定该用哪个 skill
@@ -342,6 +371,7 @@ FIRE - 提交优化代码
 | 编辑 Markdown | 完成后用 AMS 检查 |
 | 调试成功但有收获 | 用 METIS 记录案例 |
 | 需要深入理解某机制 | 使用 CMR（而非 code-reader） |
+| 跨 Session 保留调试上下文 | 使用 COBRA |
 
 ---
 
@@ -361,6 +391,29 @@ FIRE - 提交优化代码
 - 直接修改现有文档，保留核心结构
 - 重大变更在 Git commit message 中说明
 - 删除废弃内容而非标记为 deprecated
+
+---
+
+## 技能命名规范
+
+### 缩写风格偏好
+
+**首字母缩写（如 COBRA）**：每个字母对应一个**完整含义的词**，形成有意义的单词。
+
+| 技能 | 缩写 | 字母含义 |
+|------|------|----------|
+| **COBRA** | Context Orchestrated Bridge Resource Archive | C=Context, O=Orchestrated, B=Bridge, R=Resource, A=Archive |
+
+**命名原则**:
+1. **优先形成有意义的单词**（如 COBRA、METIS、CREW）
+2. **每个字母必须有独立含义**，不是随意凑的
+3. **含义要准确反映技能核心价值**，不只是功能描述
+4. **保持与技能输出类型一致**（Bridge/Archive/Resource 暗示文档类型）
+
+**反例**（避免）:
+- ❌ 随机字母：`KIMI` = Knowledge Information Management Interface（牵强）
+- ❌ 重复功能词：`CODE` = COntext DEbugging（两个词拼不出新含义）
+- ❌ 过于抽象：`TOOL` = Tracking Of Operational Logs（太平淡）
 
 ---
 

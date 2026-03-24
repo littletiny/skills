@@ -1,7 +1,9 @@
 ---
-name: system-notes
-description: Create System Notes documents for complex systems to preserve institutional knowledge across AI sessions. Use when (1) debugging a complex system repeatedly across multiple sessions, (2) the system has non-obvious mechanisms not covered by official docs, (3) context reconstruction costs are high, (4) needing to bootstrap a new session with distilled system knowledge.
+name: context-bridge
+description: Create COBRA (Context Orchestrated Bridge Resource Archive) documents for complex systems to preserve institutional knowledge across AI sessions. Use when (1) debugging a complex system repeatedly across multiple sessions, (2) the system has non-obvious mechanisms not covered by official docs, (3) context reconstruction costs are high, (4) needing to bootstrap a new session with distilled system knowledge.
 triggers:
+  - "context bridge"
+  - "COBRA"
   - "system notes"
   - "document system"
   - "knowledge transfer"
@@ -9,7 +11,9 @@ triggers:
   - "preserve context"
 ---
 
-# System Notes Creator
+# COBRA: Context Orchestrated Bridge Resource Archive
+
+
 
 Create lightweight, referenceable system knowledge documents for cross-session AI debugging.
 
@@ -21,7 +25,7 @@ When debugging complex systems:
 - Session context gets polluted with failed attempts
 - New sessions need "fresh eyes" but also core facts
 
-System Log Doc bridges this gap: a distilled, structured reference that preserves essential system knowledge without the baggage of failed debugging attempts.
+COBRA bridges this gap: a distilled, structured archive that preserves essential system knowledge without the baggage of failed debugging attempts.
 
 ---
 
@@ -36,11 +40,18 @@ System Log Doc bridges this gap: a distilled, structured reference that preserve
 | Official docs already comprehensive | | ✅ |
 | System changes frequently | | ✅ |
 
+> **COBRA = Context Orchestrated Bridge Resource Archive**
+> - **C**ontext — 保存调试上下文
+> - **O**rchestrated — 经过提炼、有组织的知识
+> - **B**ridge — 桥接不同 Session 的连续性
+> - **R**esource — 可复用的知识资源
+> - **A**rchive — 持久化存档，随时间累积
+
 ---
 
 ## What to Document: Decision Framework
 
-Not everything deserves a System Log Doc. Use this framework to decide what to capture:
+Not everything deserves a COBRA document. Use this framework to decide what to capture:
 
 ### The 3-Test Rule
 
@@ -303,8 +314,8 @@ troubleshooting:
 
 | Context | Location | Rationale |
 |---------|----------|-----------|
-| Service/System Log (Type A) | `docs/system-log/<system>.md` | Version controlled with code |
-| Cross-project System Log | `~/.openclaw/workspace/system-logs/<system>.md` | Global access |
+| Service/System COBRA (Type A) | `docs/system-log/<system>.md` | Version controlled with code |
+| Cross-project COBRA | `~/.openclaw/workspace/system-logs/<system>.md` | Global access |
 | Debug session transfer (Type B) | `memory/debug-context-<issue>.md` | Immediate session reference |
 | Troubleshooting (Type C) | `<module-dir>/troubleshooting/<symptom>.md` | Agent-framework compatible |
 
