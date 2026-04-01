@@ -1,6 +1,6 @@
 ---
 name: context-bridge
-description: Create COBRA (Context Orchestrated Bridge Resource Archive) documents for complex systems to preserve institutional knowledge across AI sessions. Use when (1) debugging a complex system repeatedly across multiple sessions, (2) the system has non-obvious mechanisms not covered by official docs, (3) context reconstruction costs are high, (4) needing to bootstrap a new session with distilled system knowledge.
+description: COBRA - Context Orchestrated Bridge Resource Archive. Create lightweight system knowledge documents for cross-session AI debugging. Use when (1) debugging a complex system repeatedly across multiple sessions, (2) the system has non-obvious mechanisms not covered by official docs, (3) context reconstruction costs are high, (4) needing to bootstrap a new session with distilled system knowledge.
 triggers:
   - "context bridge"
   - "COBRA"
