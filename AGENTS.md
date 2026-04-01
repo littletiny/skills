@@ -18,6 +18,7 @@
 | "检查 Markdown..."、"格式问题..." | [AMS](./audit-markdown-syntax/SKILL.md) | 🟡 中 |
 | "阅读代码..."、"理解项目..." | [code-reader](./code-reader/SKILL.md) | 🟡 中 |
 | "分析xx机制..."、"理解状态机..."、"消息发送流程..." | [CMR](./code-mechanism-reader/SKILL.md) | 🟡 中 |
+| "状态机分析..."、"控制流问题..."、"资源生命周期..." | [STAGE](./state-gate-protocol/SKILL.md) | 🟡 中 |
 | "又发生了..."、"类似问题..."、"学到什么..." | [METIS](./methodology-extraction-transferable-insight/SKILL.md) | 🟢 低(事后) |
 | "提交代码..."、多人协作仓库 | [FIRE](./fast-isolated-repository-execution/SKILL.md) | 🟡 中(行动前) |
 | "保存调试上下文..."、"跨 Session 知识..." | [COBRA](./context-bridge/SKILL.md) | 🟡 中 |
@@ -37,6 +38,7 @@
 | 编辑 Markdown | 完成后用 AMS 检查 |
 | 调试成功但有收获 | 用 METIS 记录案例 |
 | 需要深入理解某机制 | 使用 CMR（而非 code-reader） |
+| 分析状态机、控制流、资源生命周期 | 使用 STAGE |
 | 跨 Session 保留调试上下文 | 使用 COBRA |
 
 ---

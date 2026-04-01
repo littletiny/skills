@@ -209,6 +209,45 @@ docs/
 
 ---
 
+## STAGE - 状态门追踪协议
+
+**全称**: **ST**ate-G**A**te Trace Protocol
+
+**缩写含义**: **S**tate · **T**race · **A**nalysis · **G**ate · **E**valuation
+
+**何时使用**:
+- 分析状态机、调试复杂控制流问题
+- 追踪资源生命周期
+- 对具有离散状态和决策门的系统进行系统性根因分析
+- 需要分阶段深入探索资源流控系统
+
+**核心模型**:
+- **State**: 离散状态节点，具有清晰的语义边界、可观测性和转换条件
+- **Gate**: 状态转换的决策点，决定 allow/reject/delay/divert
+- **Action**: Gate 决策产生的副作用，因果链：`State → Gate → Action → State'`
+
+**四阶段流程**:
+1. **Discovery** - 扫描代码发现 State/Gate 实例
+2. **Analysis** - 深入分析状态语义和门逻辑
+3. **Connection** - 构建 State-Gate 拓扑关系
+4. **Diagnosis** - 沿 State-Gate 图追踪根因
+
+**输出位置**:
+- `doc/state-gate/states/{name}.md`
+- `doc/state-gate/gates/{name}.md`
+- `doc/state-gate/maps/{module}.md`
+- `doc/state-gate/paths/{symptom}_diagnosis.md`
+
+**与 CMR 的区别**:
+| | CMR | STAGE |
+|---|---|---|
+| **视角** | 单个机制的深度剖析 | 状态-决策门拓扑的系统追踪 |
+| **核心对象** | 概念、流程、组件 | State、Gate、Action |
+| **方法论** | 5W1H 分析 | 四阶段流水线 |
+| **最佳场景** | 消息发送、连接池等具体机制 | 状态机、资源生命周期、控制流 |
+
+---
+
 ## METIS - 经验萃取
 
 **全称**: Methodology Extraction & Transferable Insight System
@@ -315,6 +354,8 @@ ECTM - 结构化调试
 METIS - 萃取方法论供未来使用
 ```
 
+*若 Bug 涉及复杂状态机或控制流，可前置 STAGE 建立状态-门拓扑图。*
+
 ### 模式 C: 接手新项目
 ```
 code-reader - 阅读代码生成架构文档（全景）
@@ -327,6 +368,8 @@ METIS - 记录项目特定的认知模式
 ### 模式 D: 深入分析核心机制
 ```
 CMR - 分析状态机、数据流、组件交互
+    ↓
+STAGE（状态型机制）- 建立 State-Gate 拓扑并追踪
     ↓
 ECTM（如有 Bug）- 问题定位
     ↓

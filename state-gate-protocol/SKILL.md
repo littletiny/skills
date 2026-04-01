@@ -3,7 +3,9 @@ name: state-gate-protocol
 description: State-Gate Trace Protocol - A multi-phase pipeline methodology for exploring resource flow control systems. Use when analyzing state machines, debugging complex control flow issues, tracing resource lifecycle, or performing systematic root cause analysis on systems with discrete states and decision gates.
 ---
 
-# State-Gate Trace Protocol
+# State-Gate Trace Protocol (STAGE)
+
+**STAGE** = **S**tate · **T**race · **A**nalysis · **G**ate · **E**valuation
 
 A multi-phase pipeline methodology for exploring resource flow control systems. Each phase runs as a separate Agent, reading documents from previous phases.
 
