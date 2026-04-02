@@ -3,9 +3,7 @@ name: state-gate-protocol
 description: State-Gate Trace Protocol - A multi-phase pipeline methodology for exploring resource flow control systems. Use when analyzing state machines, debugging complex control flow issues, tracing resource lifecycle, or performing systematic root cause analysis on systems with discrete states and decision gates.
 ---
 
-# State-Gate Trace Protocol (STAGE)
-
-**STAGE** = **S**tate · **T**race · **A**nalysis · **G**ate · **E**valuation
+# State-Gate Trace Protocol
 
 A multi-phase pipeline methodology for exploring resource flow control systems. Each phase runs as a separate Agent, reading documents from previous phases.
 
@@ -19,14 +17,11 @@ State Driver Types (orthogonal, combinable):
 - **Condition-Driven**: Boolean condition satisfaction triggers transition
 - **Message-Driven**: Message/signal reception triggers transition
 
-## Phase Execution
-
-### Phase 1: Discovery
+## Phase 1: Discovery
 
 Purpose: Scan code to discover State and Gate instances.
 
 Input: Source code directory
-
 Output: `doc/state-gate/states/{name}.md`, `doc/state-gate/gates/{name}.md` with `status: discovered`
 
 Discovery Dimensions:
@@ -39,18 +34,17 @@ Discovery Dimensions:
 | **Where** | Entry mapping | Map all triggers: timers, events, signals that invoke Gates |
 
 Discovery Checklist:
-- [ ] Scan for state-bearing fields (`status`, `phase`, `state`, `mode`, `condition`)
-- [ ] Scan for decision points (if/else, switch, match on state fields)
-- [ ] Identify entry points: message handlers, API endpoints, callbacks
-- [ ] Classify driver type: Condition-Driven vs Message-Driven
-- [ ] Document: file location, state field name, decision logic location
+- Scan for state-bearing fields: `status`, `phase`, `state`, `mode`, `condition`
+- Scan for decision points: `if/else`, `switch`, `match` on state fields
+- Identify entry points: message handlers, API endpoints, callbacks
+- Classify driver type: Condition-Driven vs Message-Driven
+- Document: file location, state field name, decision logic location
 
-### Phase 2: Analysis
+## Phase 2: Analysis
 
 Purpose: Deep analysis of discovered State/Gate instances.
 
 Input: states/*.md, gates/*.md with status=discovered
-
 Output: Updated documents with status=analyzed
 
 Analysis Dimensions:
@@ -65,30 +59,28 @@ Analysis Dimensions:
 | **Why** | Design rationale | Understand why this State/Gate design was chosen |
 | **Evidence** | Critical code sections | Pinpoint the exact code that implements core logic |
 
-State Analysis Checklist:
-- [ ] Semantics: What does this state represent?
-- [ ] Driver: Condition-Driven / Message-Driven / Hybrid?
-- [ ] State Machine: All states, transitions, triggers (use mermaid stateDiagram)
-- [ ] Entry/Exit: What conditions trigger transitions?
-- [ ] Gates: Which Gates check this State?
-- [ ] Abnormal: What happens when transition fails?
-- [ ] Code Evidence: File:line for state definition, transitions, error handling
+State analysis:
+- Semantics: what does this state represent?
+- Driver: Condition-Driven / Message-Driven / Hybrid?
+- State machine: all states, transitions, triggers (use mermaid stateDiagram)
+- Entry/exit conditions
+- Gates that check this State
+- Abnormal transition handling
+- Code evidence: file:line
 
-Gate Analysis Checklist:
-- [ ] Trigger: When is this gate evaluated? (event, polling, callback)
-- [ ] Condition breakdown: What criteria is checked?
-- [ ] Source: Where do criteria values come from? (which States)
-- [ ] Decision logic: allow/reject/delay/divert conditions
-- [ ] Action analysis: What happens after decision? (side effects, next State)
-- [ ] Sensitivity: Easy to trigger? Under what conditions?
-- [ ] Code Evidence: File:line for gate evaluation, condition checks, actions
+Gate analysis:
+- Trigger: when is this gate evaluated? (event, polling, callback)
+- Condition breakdown: what criteria is checked?
+- Source: where do criteria values come from?
+- Decision logic: allow/reject/delay/divert conditions
+- Action analysis: side effects, next State
+- Code evidence: file:line
 
-### Phase 3: Connection
+## Phase 3: Connection
 
 Purpose: Build State-Gate topology relationships.
 
 Input: states/*.md, gates/*.md with status=analyzed
-
 Output: maps/{module}.md
 
 Connection Checklist:
@@ -97,12 +89,11 @@ Connection Checklist:
 - Gate cascading: gate A triggers -> affects gate B
 - Critical paths: entry to exit control chains
 
-### Phase 4: Diagnosis
+## Phase 4: Diagnosis
 
 Purpose: Trace root cause along State-Gate graph.
 
 Input: maps/{module}.md + symptom description
-
 Output: paths/{symptom}_diagnosis.md
 
 Output Specification:
